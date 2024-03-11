@@ -18,6 +18,74 @@
             <li><a href="servicios.html">Servivios</a></li>
         </ul>
     </nav>
+    <main>
+        <h1>Contacto</h1>
+        <form>
+            <div id="formulario">
+
+                <div class="datos_contacto">
+                    <div class="elemento_contacto">
+                        <label for="nombre">Nombre*:</label>
+                        <input type="text" id="nombre" name="nombre_usuario" required>
+                    </div>
+                    <div class="elemento_contacto">
+                        <label for="apellido">Apellido*:</label>
+                        <input type="text" id="apellido" name="apellido_usuario" required>
+                    </div>
+                </div>
+
+                <div class="datos_contacto">
+                    <div class="elemento_contacto">
+                        <label for="email_usuario">Email*:</label>
+                        <input type="email" name="email_usuario" id="email_usuario" required>
+                    </div>
+                    <div class="elemento_contacto">
+                        <label for="tlf_usuario">Teléfono:</label>
+                        <input type="text" name="tlf_usuario" id="tlf_usuario">
+                    </div>
+                </div>
+
+                <div class="datos_contacto">
+                    <div class="elemento_contacto">
+                        <label for="servicio_cliente">Servicio*:</label>
+                        <select name="servicio_cliente" id="servicio_cliente" required>
+                            <option value="Proyecto_nuevo">Proyecto nuevo</option>
+                            <option value="Reparacion">Reparación</option>
+                            <option value="Mejora">Mejora</option>
+                            <option value="Informacion">Consulta información</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="elemento_contacto">
+                        <label for="nombre_emp">Nombre de la empresa*:</label>
+                        <input type="text" id="nombre_emp" name="nombre_empresa" required>
+                    </div>
+                </div>
+                <div class="datos_contacto elemento_contacto">
+                    <label for="pais">País*:</label>
+                    <input type="radio" name="pais" id="0" required> <label for="0">España</label>
+                    <input type="radio" name="pais" id="1" required> <label for="1">Francia </label>
+                    <input type="radio" name="pais" id="2" required> <label for="2">Alemania </label>
+                    <input type="radio" name="pais" id="3" required> <label for="3">Mexico </label>
+                    <input type="radio" name="pais" id="4" required> <label for="4">Estados Unidos</label>
+                    <input type="radio" name="pais" id="5" required> <label for="5">China </label>
+                    <input type="radio" name="pais" id="6" required> <label for="6">India </label>
+                    <input type="radio" name="pais" id="7" required> <label for="7">Sudáfrica </label>
+                    <input type="radio" name="pais" id="8" required> <label for="8">Otro </label>
+                </div>
+
+                <div class="datos_contacto">
+                    <label for="consulta">Consulta*:</label>
+                    <textarea name="consulta" id="consulta" cols="50" rows="10" required></textarea>
+                    <p>
+                        Es obligatorio rellenar los campos marcados con asterisco (*).
+                    </p>
+                </div>
+                <div class="boton_enviar_consulta">
+                    <input id="boton_enviar_consulta" type="submit" value="Enviar consulta">
+                </div>
+            </div>
+    </main>
 </body>
 
 </html>
