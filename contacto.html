@@ -9,18 +9,22 @@
 </head>
 
 <body>
-    <header>
-        <img src="https://www.loramendi.com/wp-content/uploads/2023/06/loramendi-logo-2023.png" alt="logo loramendi">
-        <h1>Contacto - Loramendi S.Coop.</h1>
+     <header>
+        <h1 id="logotipo">Loramendi S.Coop.</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="pag_principal.html">Página principal</a></li>
-            <li><a href="servicios.html">Servivios</a></li>
+        <ul id="navegacion">
+            <li class="el_navegacion"><a class="enl_nav" href="pag_principal.html">Página principal</a></li>
+            <li class="el_navegacion"><a class="enl_nav" href="servicios.html">Servicios</a></li>
         </ul>
+        <form id="inicio_sesion">
+            <label for="cliente">Usuario:</label> <input id="cliente" type="text" required>
+            <label for="contraseña_cliente">Contraseña:</label> <input id="contraseña_cliente" type="password" required>
+            <input type="submit" value="Entrar">
+        </form>
     </nav>
     <main>
-        <h1>Contacto</h1>
+        <h2>Contacto</h2>
         <form>
             <div id="formulario">
 

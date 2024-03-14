@@ -4,22 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Loramendi S.Coop.</title>
+    <title>Loramendi S.Coop.</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
     <header>
-        <img src="https://www.loramendi.com/wp-content/uploads/2023/06/loramendi-logo-2023.png" alt="logo loramendi">
-        <h1>Servivios - Loramendi S.Coop. </h1>
+        <h1 id="logotipo">Loramendi S.Coop.</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="pag_principal.html">Página principal</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+        <ul id="navegacion">
+            <li class="el_navegacion"><a class="enl_nav" href="pag_principal.html">Págnina principal</a></li>
+            <li class="el_navegacion"><a class="enl_nav" href="contacto.html">Contacto</a></li>
         </ul>
+        <form id="inicio_sesion">
+            <label for="cliente">Usuario:</label> <input id="cliente" type="text" required>
+            <label for="contraseña_cliente">Contraseña:</label> <input id="contraseña_cliente" type="password" required>
+            <input type="submit" value="Entrar">
+        </form>
     </nav>
     <main>
+        <h2>Servicios</h2>
         <div id="catalogo_servivios">
             <div class="servicio">
                 <p class="tit_servicio">Piezas de repuesto</p>
