@@ -43,17 +43,22 @@ nav {
     justify-content: center;
 }
 
-h1, p, a {
+h1,
+p,
+a {
     font-family: 'Times New Roman', Times, serif;
 }
+
 h1 {
     font-size: 45px;
     color: rgb(92, 158, 79);
 }
+
 p {
     font-size: 16px;
     color: black;
 }
+
 label {
     font-size: 15px;
 }
@@ -75,4 +80,53 @@ td {
     justify-content: center;
     text-align: center;
     padding: 0px 10px;
+}
+
+/* PAGINA PRINCIPAL */
+#titulo_entrada {
+    min-width: 150px;
+}
+
+#entrada {
+    display: flex;
+    margin: auto auto 0px 30px;
+    flex-wrap: wrap
+}
+
+#texto_entrada {
+    padding-right: 50px;
+    padding-left: 30px;
+    padding-top: 10px;
+    min-width: 250px;
+    max-width: 400px;
+    height: 100%;
+}
+
+#imagen_entrada {
+    margin-top: 50px;
+    height: 300px;
+    min-width: 450px;
+    margin: auto auto 30px 80px;
+    justify-content: center;
+}
+
+#noticias {
+    display: flex;
+    max-width: 1000px;
+    margin: 0px auto 0px auto;
+}
+
+#titulo_noticias {
+    margin-bottom: 1px;
+}
+.noticia {
+    padding: 2px;
+    width: 50%;
+}
+
+.texto_noticia {
+    display: flex;
+    width: 70%;
+    margin: 10px auto 10px auto;
+    text-decoration: none;
 }
