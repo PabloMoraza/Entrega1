@@ -4,6 +4,10 @@ body {
     margin-right: 50px;
 }
 
+header {
+    background-color: rgb(191, 255, 189);
+}
+
 #logotipo {
     padding-top: 20px;
     padding-bottom: 30px;
@@ -44,6 +48,9 @@ nav {
 }
 
 h1,
+h2,
+h3,
+label,
 p,
 a {
     font-family: 'Times New Roman', Times, serif;
@@ -51,12 +58,14 @@ a {
 
 h1 {
     font-size: 45px;
-    color: rgb(92, 158, 79);
+    color: rgb(127, 219, 255);
 }
-h2{
+
+h2 {
     color: rgb(0, 136, 255);
     font-size: 37px;
 }
+
 p {
     font-size: 16px;
     color: black;
@@ -174,6 +183,52 @@ td {
     margin: 0px auto 0px auto;
     padding: 0%;
 }
+
 a {
     text-decoration: none;
+}
+
+/* FORMULARIO */
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.datos_contacto {
+    display: flex;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.elemento_contacto {
+    margin: 5px;
+}
+
+#boton_enviar_consulta {
+    margin: 10px;
+}
+
+
+
+/* menos que 1150 desaparece login */
+@media only screen and (max-width: 1150px) {
+    #inicio_sesion {
+        display: none;
+    }
+
+    #oficinas{
+        display: none;
+    }
+}
+
+/* menos que 700 desaparece img_portada*/
+@media only screen and (max-width: 700px) {
+    #imagen_entrada {
+        display: none;
+    }
+    #derechos {
+        display: none;
+    }
 }
