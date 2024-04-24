@@ -5,15 +5,7 @@ body {
 }
 
 header {
-    background-color: rgb(191, 255, 189);
-}
-
-#logotipo {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    display: flex;
-    width: 400px;
-    margin: 0.1px auto 0.1px auto;
+    background-color: white;
 }
 
 #inicio_sesion {
@@ -47,6 +39,7 @@ nav {
     justify-content: center;
 }
 
+span,
 h1,
 h2,
 h3,
@@ -56,14 +49,20 @@ a {
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1 {
+span {
     font-size: 45px;
-    color: rgb(127, 219, 255);
+    color: rgb(0, 136, 255);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    width: 400px;
+    margin: 0.1px auto 0.1px auto;
 }
 
-h2 {
-    color: rgb(0, 136, 255);
+h1 {
     font-size: 37px;
+    color: rgb(0, 255, 136);
+    padding-left: 50px;
 }
 
 p {
@@ -119,10 +118,10 @@ td {
     height: 300px;
     min-width: 450px;
     margin: auto auto 30px 80px;
-    justify-content: center;
+    justify-self: center;
 }
 
-#noticias {
+section {
     display: flex;
     max-width: 1000px;
     margin: 0px auto 0px auto;
@@ -132,7 +131,7 @@ td {
     margin-bottom: 1px;
 }
 
-.noticia {
+article {
     padding: 2px;
     width: 50%;
 }
@@ -217,16 +216,26 @@ a {
     #inicio_sesion {
         display: none;
     }
-
     #oficinas{
         display: none;
+    }
+    #texto_entrada {
+        padding-right: 50px;
+        padding-left: 30px;
+        padding-top: 10px;
+        min-width: 250px;
+        max-width: 1150px;
+        height: 100%;
     }
 }
 
 /* menos que 700 desaparece img_portada*/
 @media only screen and (max-width: 700px) {
     #imagen_entrada {
-        display: none;
+        margin-top: 50px;
+        height: 200px;
+        min-width: 350px;
+        justify-self: center;
     }
     #derechos {
         display: none;
