@@ -185,7 +185,7 @@ article {
     align-self: center;
 }
 
-#boton_servicio {
+.boton_servicio {
     display: flex;
     margin: 0px auto 0px auto;
     padding: 0%;
