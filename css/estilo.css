@@ -21,7 +21,7 @@ nav {
     align-items: center;
 }
 
-#navegacion {
+.navegacion {
     display: flex;
     width: 100%;
 }
