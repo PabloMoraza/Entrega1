@@ -79,6 +79,13 @@ label {
     font-size: 15px;
 }
 
+a {
+    text-decoration: none;
+    display: flex;
+    margin: 0px auto 0px auto;
+    padding: 0%;
+}
+
 /* FOOTER */
 footer {
     padding: 30px;
@@ -185,14 +192,9 @@ article {
     align-self: center;
 }
 
-.boton_servicio {
-    display: flex;
-    margin: 0px auto 0px auto;
-    padding: 0%;
-}
-
-a {
-    text-decoration: none;
+.enlace_servicio {
+    border: solid 1px;
+    padding: 2px;
 }
 
 /* FORMULARIO */
